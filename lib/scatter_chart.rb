@@ -18,13 +18,13 @@ class ScatterChart
           function drawChart() {
             var data = google.visualization.arrayToDataTable([
               ['Feature 1', 'Feature 2'],
-              #{@data.map{|v| v.to_s}.join(',')}
+              #{@data.map{|k| "[#{k[0]}, #{k[1]}]"}.join(',')}
             ]);
     
             var options = {
               title: 'User Features',
-              hAxis: {title: 'Feature 1', minValue: 0, maxValue: 1.5},
-              vAxis: {title: 'Feature 2', minValue: -1, maxValue: 1},
+              hAxis: {title: 'Feature 1', minValue: -2.9, maxValue: 2.9},
+              vAxis: {title: 'Feature 2', minValue: -2.9, maxValue: 2.9},
               legend: 'none'
             };
     
