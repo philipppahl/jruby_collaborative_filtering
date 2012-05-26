@@ -1,7 +1,7 @@
 require File.expand_path('../../../config/environment',  __FILE__)
 
 # Comma separated list of user ratings
-ratings = Examples.root + '/01_matrix_factorization/bullshit.csv'
+ratings = Examples.root + '/01_matrix_factorization/test.csv'
 
 # Perform the factorization and retrieve the user features
 factorization = AlsFactorizer.new(ratings).factorize(1, 0.5, 99)
