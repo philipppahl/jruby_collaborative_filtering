@@ -21,8 +21,16 @@ end
 
 java_import 'org.apache.mahout.cf.taste.impl.model.file.FileDataModel'
 java_import 'org.apache.mahout.cf.taste.impl.recommender.svd.ALSWRFactorizer'
+java_import 'org.apache.mahout.math.SingularValueDecomposition'
+java_import 'org.apache.mahout.math.DenseMatrix'
+java_import 'org.apache.mahout.math.DenseVector'
+
+
+require 'matrix'
+require 'csv'
 
 require 'als_factorizer'
+require 'svd'
 require 'scatter_chart'
 
 
